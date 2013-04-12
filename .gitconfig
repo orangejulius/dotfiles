@@ -1,0 +1,23 @@
+[color]
+	ui = auto
+[user]
+	name = Julian Simioni
+	email = julian.simioni@gmail.com
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset' --abbrev-commit
+	st = status -sb
+
+[url "git://anongit.kde.org/"]
+	insteadOf = kde:
+[url "git@git.kde.org:"]
+	pushInsteadOf = kde:
+[credential]
+	helper = store
+[push]
+	default = current
+[branch]
+	autosetuprebase = always
+[core]
+	excludesfile = ~/.gitignore_global
+[merge]
+	conflictstyle = diff3
