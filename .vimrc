@@ -36,6 +36,7 @@ Bundle 'Rubytest.vim'
 Bundle 'The-NERD-Commenter'
 Bundle 'rails.vim'
 Bundle 'ctrlp.vim'
+Bundle 'endwise.vim'
 
 filetype plugin indent on     " required!
 syntax on
