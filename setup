@@ -1,0 +1,14 @@
+#!/bin/bash
+dotfilesDir=`pwd`
+
+#ln command
+ln="ln -nfs"
+
+#install Vundle
+git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+
+#symlink all dotfiles
+for dotfile in ${dotfilesDir}/*; do
+	dotfileName=$(basename $dotfile)
+	$ln -b "${dotfile}" ~/.${dotfileName}
+done
