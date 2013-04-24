@@ -1,6 +1,8 @@
 #!/bin/bash
 dotfilesDir=`pwd`
 
+notDotfiles="setup README.md"
+
 #ln command
 ln="ln -nfs"
 
