@@ -15,6 +15,7 @@ if [[ $- != *i* ]] ; then
 fi
 
 EDITOR=`which vim`
+export PYTHONDONTWRITEBYTECODE=true
 
 export MOZCONFIG=~/repos/home/dotfiles/mozconfig
 if [ -d ~/.kdedevrc ]; then
