@@ -35,6 +35,11 @@ export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 #user scripts
 export PATH=~/code/bin:$PATH
 
+# homebrew bash completion
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+	. `brew --prefix`/etc/bash_completion
+fi
+
 # my aliases
 alias ssh=mosh
 alias screen=tmux
