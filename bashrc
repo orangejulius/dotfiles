@@ -35,6 +35,7 @@ export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 #user scripts
 export PATH=~/code/bin:$PATH
 
+# my aliases
 alias ssh=mosh
 alias screen=tmux
 alias git='hub'
