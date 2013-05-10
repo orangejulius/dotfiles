@@ -17,5 +17,5 @@ mkdir -p ~/.tmp
 #symlink all dotfiles
 for dotfile in ${dotfilesDir}/*; do
 	dotfileName=$(basename $dotfile)
-	$ln -b "${dotfile}" ~/.${dotfileName}
+	$ln "${dotfile}" ~/.${dotfileName}
 done
