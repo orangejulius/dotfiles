@@ -29,16 +29,13 @@ export GOROOT=~/Documents/go/
 #rvm
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
-#macports
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+# Mac specific stuff
+if [[ `uname` == 'Darwin' ]]; then
+	source ~/.bashrc_mac
+fi
 
 #user scripts
 export PATH=~/code/bin:$PATH
-
-# homebrew bash completion
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-	. `brew --prefix`/etc/bash_completion
-fi
 
 # my aliases
 alias ssh=mosh

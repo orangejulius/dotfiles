@@ -1,0 +1,8 @@
+#!/bin/bash
+# git autocomplete
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+    . `brew --prefix`/etc/bash_completion
+fi
+
+#macports
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
