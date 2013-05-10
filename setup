@@ -19,3 +19,9 @@ for dotfile in ${dotfilesDir}/*; do
 	dotfileName=$(basename $dotfile)
 	$ln "${dotfile}" ~/.${dotfileName}
 done
+
+touch ~/.bashrc_local
+
+if [[ ! -d ~/.bash_profile ]]; then
+	echo "source ~/.bashrc" >> ~/.bash_profile
+fi
