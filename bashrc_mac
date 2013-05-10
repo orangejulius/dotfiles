@@ -4,5 +4,9 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
     . `brew --prefix`/etc/bash_completion
 fi
 
+#gnu coreutils
+export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
+
 #macports
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
