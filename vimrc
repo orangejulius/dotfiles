@@ -84,7 +84,7 @@ au BufRead,BufNewFile Guardfile set filetype=ruby
 autocmd BufNewFile,BufRead *.less setf less
 
 au BufNewFile,BufReadPost *.coffee set filetype=coffee
-au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
+au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab softtabstop=2
 " replace :W with :w
 cnoreabbrev <expr> W ((getcmdtype() is# ':' && getcmdline() is# 'W')?('w'):('W'))
 
@@ -126,3 +126,4 @@ set softtabstop=4
 
 au BufNewFile,BufReadPost *.rb set expandtab
 au BufNewFile,BufReadPost *.rb set tabstop=2
+au BufNewFile,BufReadPost *.rb set softtabstop=2
