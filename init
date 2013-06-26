@@ -1,0 +1,5 @@
+cd
+git clone https://github.com/orangejulius/dotfiles.git
+
+cd dotfiles
+./setup
