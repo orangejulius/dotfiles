@@ -14,7 +14,7 @@ if [[ $- != *i* ]] ; then
 	return
 fi
 
-EDITOR=`which vim`
+export EDITOR=`which vim`
 export PYTHONDONTWRITEBYTECODE=true
 
 export MOZCONFIG=~/repos/home/dotfiles/mozconfig
