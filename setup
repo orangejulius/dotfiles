@@ -25,3 +25,6 @@ touch ~/.bashrc_local
 if [[ ! -d ~/.bash_profile ]]; then
 	echo "source ~/.bashrc" >> ~/.bash_profile
 fi
+
+# run vim setup
+vim -s 'setup.vim'
