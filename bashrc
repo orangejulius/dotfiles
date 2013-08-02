@@ -17,6 +17,9 @@ fi
 export EDITOR=`which vim`
 export PYTHONDONTWRITEBYTECODE=true
 
+# keep a super long bash history
+export HISTFILESIZE=250000
+
 export MOZCONFIG=~/repos/home/dotfiles/mozconfig
 if [ -d ~/.kdedevrc ]; then
 	source ~/.kdedevrc
