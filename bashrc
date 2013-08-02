@@ -20,6 +20,10 @@ export PYTHONDONTWRITEBYTECODE=true
 # keep a super long bash history
 export HISTFILESIZE=250000
 
+# store the history immediately
+shopt -s histappend
+PROMPT_COMMAND="history -a;$PROMPT_COMMAND"
+
 export MOZCONFIG=~/repos/home/dotfiles/mozconfig
 if [ -d ~/.kdedevrc ]; then
 	source ~/.kdedevrc
