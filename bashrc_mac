@@ -10,3 +10,9 @@ export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 
 #macports
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+
+#npm
+export PATH=/usr/local/share/npm/bin/:$PATH
+
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
