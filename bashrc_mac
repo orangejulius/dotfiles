@@ -16,3 +16,6 @@ export PATH=/usr/local/share/npm/bin/:$PATH
 
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
+
+#go
+export GOROOT=~/Documents/go/
