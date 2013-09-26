@@ -133,3 +133,4 @@ au BufNewFile,BufReadPost *.rb set expandtab
 au BufNewFile,BufReadPost *.rb set tabstop=2
 au BufNewFile,BufReadPost *.rb set softtabstop=2
 au BufNewFile,BufReadPost *.rb set shiftwidth=2
+au BufNewFile,BufReadPost *.rb set foldmethod=manual
