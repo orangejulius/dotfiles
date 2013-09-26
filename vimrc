@@ -37,6 +37,9 @@ Bundle 'The-NERD-Commenter'
 Bundle 'rails.vim'
 Bundle 'ctrlp.vim'
 Bundle 'endwise.vim'
+Bundle 'matchit.zip'
+Bundle 'textobj-user'
+Bundle 'textobj-rubyblock'
 
 filetype plugin indent on     " required!
 syntax on
