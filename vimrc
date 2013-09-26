@@ -30,6 +30,8 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'chriskempson/vim-tomorrow-theme'
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'pangloss/vim-javascript'
+Bundle 'briancollins/vim-jst'
 " vim-scripts repos
 Bundle 'ruby.vim'
 Bundle 'Rubytest.vim'
