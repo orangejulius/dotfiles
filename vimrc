@@ -41,6 +41,8 @@ Bundle 'ruby.vim'
 Bundle 'textobj-user'
 " easily select ruby blocks
 Bundle 'textobj-rubyblock'
+" Bundler (the rubygem) integration
+Bundle 'tpope/vim-bundler'
 " great in-vim interface to git (Gblame, etc)
 Bundle 'tpope/vim-fugitive'
 " rails syntax highlighting
