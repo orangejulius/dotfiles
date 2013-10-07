@@ -1,71 +1,78 @@
-set nu
-
-highlight ExtraWhitespace ctermbg=red guibg=red
-match ExtraWhitespace /\s\+$/
-autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
-autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
-autocmd InsertLeave * match ExtraWhitespace /\s\+$/
-autocmd BufWinLeave * call clearmatches()
-
-let go_highlight_trailing_whitespace_error = 0
-
-set pastetoggle=<F10>
-
 set nocompatible               " be iMproved
 
-set rtp+=~/.vim/bundle/vundle/
+"
+"" Vundle
+"
+filetype off
+set runtimepath+=~/.vim/bundle/vundle/ " add vundle to runtimepath
 call vundle#rc()
 
 " let Vundle manage Vundle
-" required!
 Bundle 'gmarik/vundle'
 
-" My Bundles here:
-"
-" original repos on github
-Bundle 'tpope/vim-fugitive'
-Bundle 'groenewege/vim-less'
-Bundle 'tpope/vim-rails.git'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'airblade/vim-gitgutter'
-Bundle 'chriskempson/vim-tomorrow-theme'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'pangloss/vim-javascript'
-Bundle 'briancollins/vim-jst'
-" vim-scripts repos
-Bundle 'ruby.vim'
-Bundle 'Rubytest.vim'
+" easily comment out huge swaths of code
 Bundle 'The-NERD-Commenter'
-Bundle 'rails.vim'
+" show git line status in the gutter
+Bundle 'airblade/vim-gitgutter'
+" javascript template syntax highlighting
+Bundle 'briancollins/vim-jst'
+" use awesome colorscheme
+Bundle 'chriskempson/vim-tomorrow-theme'
+" vim-scripts repos
+Bundle 'The-NERD-Commenter'
+" awesome searching
 Bundle 'ctrlp.vim'
+" automatically add ruby end tags
 Bundle 'endwise.vim'
+" less syntax highlighting
+Bundle 'groenewege/vim-less'
+" run ruby tests with <Leader>t
+Bundle 'janx/vim-rubytest'
+" coffeescript syntax highlighting
+Bundle 'kchmck/vim-coffee-script'
+" text matching (dependency of textobj-rubyblock)
 Bundle 'matchit.zip'
+" javascript syntax highlighting
+Bundle 'pangloss/vim-javascript'
+" ruby syntax highlighting
+Bundle 'ruby.vim'
+" improve text selection abilities (dependency of textobj-rubyblock)
 Bundle 'textobj-user'
+" easily select ruby blocks
 Bundle 'textobj-rubyblock'
+" great in-vim interface to git (Gblame, etc)
+Bundle 'tpope/vim-fugitive'
+" rails syntax highlighting
+Bundle 'tpope/vim-rails'
 
 filetype plugin indent on     " required!
-syntax on
 
-set scrolloff=3
-set visualbell
-set laststatus=2
-set undofile
+syntax on " show syntax highlighting
 
-nnoremap / /\v
-vnoremap / /\v
-set ignorecase
-set smartcase
-set gdefault
-set incsearch
-set showmatch
+set gdefault " replace globally by default
 set hlsearch
+set ignorecase
+set incsearch
+set laststatus=2 " always show status bar
+set number " show line numbers
+set pastetoggle=<F10> " use f10 to toggle paste mode
+set scrolloff=3
+set showmatch
+set smartcase
+set softtabstop=4
+set undofile " use persistent undo in a file
+set visualbell " enable visual bell (disable audio bell)
 set wildmode=longest,list
-nnoremap <leader><space> :noh<cr>
+
+nnoremap <leader><space> :noh<cr> " easily clear highlighting
 " clear whitespace with <leader>W
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 
 " easily open vimrc
 nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr>
+
+nnoremap / /\v
+vnoremap / /\v
 
 " kill help shortcut
 noremap <F1> <ESC>
@@ -117,7 +124,9 @@ nnoremap <C-l> <C-w>l
 " CtrlP options
 let g:ctrlp_max_depth=10
 
-"colorscheme Tomorrow-Night
+"theme options
+set background=dark
+colorscheme Tomorrow-Night-Bright
 
 " display tab/eol markers
 nnoremap <leader>ll :set list!<cr>
@@ -127,7 +136,19 @@ set listchars=tab:▸\ ,eol:¬
 nnoremap <C-u> gT
 nnoremap <C-o> gt
 
-set softtabstop=4
+" highlight trailing whitespace
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+autocmd BufWinLeave * call clearmatches()
+
+" disable Go syntax highlighting's trailing whitespace
+" (it conflicts with the above)
+let go_highlight_trailing_whitespace_error = 0
+
+""" Settings for various filetypes
 
 au BufNewFile,BufReadPost *.rb set expandtab
 au BufNewFile,BufReadPost *.rb set tabstop=2
