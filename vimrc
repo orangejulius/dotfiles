@@ -3,7 +3,6 @@ set nocompatible               " be iMproved
 "
 "" Vundle
 "
-filetype off
 set runtimepath+=~/.vim/bundle/vundle/ " add vundle to runtimepath
 call vundle#rc()
 
