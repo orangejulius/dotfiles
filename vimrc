@@ -18,6 +18,8 @@ Bundle 'airblade/vim-gitgutter'
 Bundle 'briancollins/vim-jst'
 " use awesome colorscheme
 Bundle 'chriskempson/vim-tomorrow-theme'
+" run SQL in vim
+Bundle 'dbext.vim'
 " vim-scripts repos
 Bundle 'The-NERD-Commenter'
 " awesome searching
