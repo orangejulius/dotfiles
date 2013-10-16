@@ -8,6 +8,9 @@ fi
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 
+#homebrew
+export PATH=/usr/local/bin:$PATH
+
 #macports
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 
