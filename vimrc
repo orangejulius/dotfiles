@@ -33,6 +33,10 @@ Bundle 'janx/vim-rubytest'
 Bundle 'kchmck/vim-coffee-script'
 " text matching (dependency of textobj-rubyblock)
 Bundle 'matchit.zip'
+" easily create gists
+Bundle 'mattn/gist-vim'
+" requirement of gist-vim
+Bundle 'mattn/webapi-vim'
 " javascript syntax highlighting
 Bundle 'pangloss/vim-javascript'
 " ruby syntax highlighting
