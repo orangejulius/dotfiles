@@ -1,8 +1,6 @@
 set nocompatible               " be iMproved
 
-"
 "" Vundle
-"
 set runtimepath+=~/.vim/bundle/vundle/ " add vundle to runtimepath
 call vundle#rc()
 
@@ -17,12 +15,10 @@ Bundle 'airblade/vim-gitgutter'
 Bundle 'briancollins/vim-jst'
 " use awesome colorscheme
 Bundle 'chriskempson/vim-tomorrow-theme'
-" run SQL in vim
-Bundle 'dbext.vim'
-" vim-scripts repos
-Bundle 'The-NERD-Commenter'
 " awesome searching
 Bundle 'ctrlp.vim'
+" run SQL in vim
+Bundle 'dbext.vim'
 " automatically add ruby end tags
 Bundle 'endwise.vim'
 " less syntax highlighting
@@ -45,6 +41,8 @@ Bundle 'ruby.vim'
 Bundle 'textobj-user'
 " easily select ruby blocks
 Bundle 'textobj-rubyblock'
+" vim-scripts repos
+Bundle 'The-NERD-Commenter'
 " Bundler (the rubygem) integration
 Bundle 'tpope/vim-bundler'
 " great in-vim interface to git (Gblame, etc)
@@ -61,8 +59,8 @@ set hlsearch
 set ignorecase
 set incsearch
 set laststatus=2 " always show status bar
-set number " show line numbers
 set nofoldenable " disable code folding
+set number " show line numbers
 set pastetoggle=<F10> " use f10 to toggle paste mode
 set scrolloff=3
 set showmatch
@@ -70,15 +68,17 @@ set smartcase
 set softtabstop=4
 set undofile " use persistent undo in a file
 set visualbell " enable visual bell (disable audio bell)
-set wildmode=longest,list
+set wildmode=longest,list "use bash-like autocomplete
 
 nnoremap <leader><space> :noh<cr> " easily clear highlighting
+
 " clear whitespace with <leader>W
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 
 " easily open vimrc
 nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr>
 
+" auto insert \v before search strings
 nnoremap / /\v
 vnoremap / /\v
 
@@ -96,15 +96,11 @@ inoremap <up> <nop>
 inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
+
 " navigate by screen line, not file line
 nnoremap j gj
 nnoremap k gk
 
-au BufRead,BufNewFile Guardfile set filetype=ruby
-autocmd BufNewFile,BufRead *.less setf less
-
-au BufNewFile,BufReadPost *.coffee set filetype=coffee
-au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab softtabstop=2
 " replace :W with :w
 cnoreabbrev <expr> W ((getcmdtype() is# ':' && getcmdline() is# 'W')?('w'):('W'))
 
@@ -154,6 +150,12 @@ let go_highlight_trailing_whitespace_error = 0
 let g:rubytest_cmd_test = "testdrb_or_rake %p" " https://gist.github.com/7013303
 
 """ Settings for various filetypes
+
+au BufRead,BufNewFile Guardfile set filetype=ruby
+autocmd BufNewFile,BufRead *.less setf less
+
+au BufNewFile,BufReadPost *.coffee set filetype=coffee
+au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab softtabstop=2
 
 au BufNewFile,BufReadPost *.rb set expandtab
 au BufNewFile,BufReadPost *.rb set tabstop=2
