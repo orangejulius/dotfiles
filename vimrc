@@ -70,36 +70,29 @@ set undofile " use persistent undo in a file
 set visualbell " enable visual bell (disable audio bell)
 set wildmode=longest,list "use bash-like autocomplete
 
-nnoremap <leader><space> :noh<cr> " easily clear highlighting
+map <leader><space> :noh<cr> " easily clear highlighting
 
 " clear whitespace with <leader>W
-nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
+map <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 
 " easily open vimrc
-nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr>
+map <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr>
 
 " auto insert \v before search strings
-nnoremap / /\v
-vnoremap / /\v
+map / /\v
 
 " kill help shortcut
-noremap <F1> <ESC>
-nnoremap <F1> <ESC>
-vnoremap <F1> <ESC>
+map <F1> <ESC>
 
 " use hjkl!
-nnoremap <up> <nop>
-nnoremap <down> <nop>
-nnoremap <left> <nop>
-nnoremap <right> <nop>
-inoremap <up> <nop>
-inoremap <down> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
 
 " navigate by screen line, not file line
-nnoremap j gj
-nnoremap k gk
+map j gj
+map k gk
 
 " replace :W with :w
 cnoreabbrev <expr> W ((getcmdtype() is# ':' && getcmdline() is# 'W')?('w'):('W'))
@@ -113,10 +106,10 @@ set undodir=~/.tmp
 "nmap <C-[> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
 
 " navigate between windows more cleanly
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
 
 " CtrlP options
 let g:ctrlp_max_depth=10
@@ -126,12 +119,12 @@ set background=dark
 colorscheme Tomorrow-Night-Bright
 
 " display tab/eol markers
-nnoremap <leader>ll :set list!<cr>
+map <leader>ll :set list!<cr>
 set listchars=tab:▸\ ,eol:¬
 
 " easily navigate between tabs
-nnoremap <C-u> gT
-nnoremap <C-o> gt
+map <C-u> gT
+map <C-o> gt
 
 " highlight trailing whitespace
 highlight ExtraWhitespace ctermbg=red guibg=red
