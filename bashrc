@@ -29,12 +29,6 @@ else
 	PS1='\[\033[01;32m\]\u@\h\[\033[01;34m\] \w \$\[\033[00m\] '
 fi
 
-#rvm
-if [[ -s "$HOME/.rvm/scripts/rvm" ]]; then
-	source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-	export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-fi
-
 # Mac specific stuff
 if [[ `uname` == 'Darwin' ]]; then
 	source ~/.bashrc_mac
@@ -42,6 +36,12 @@ fi
 
 #user scripts
 export PATH=~/code/bin:$PATH
+
+#rvm
+if [[ -s "$HOME/.rvm/scripts/rvm" ]]; then
+	source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+	export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+fi
 
 # my aliases
 alias ssh=mosh
