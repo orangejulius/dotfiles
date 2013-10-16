@@ -24,3 +24,5 @@
 	excludesfile = ~/.gitignore_global
 [merge]
 	conflictstyle = diff3
+[github]
+	user = orangejulius
