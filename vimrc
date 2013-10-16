@@ -62,6 +62,7 @@ set ignorecase
 set incsearch
 set laststatus=2 " always show status bar
 set number " show line numbers
+set nofoldenable " disable code folding
 set pastetoggle=<F10> " use f10 to toggle paste mode
 set scrolloff=3
 set showmatch
@@ -114,13 +115,6 @@ set undodir=~/.tmp
 
 " open tag definition in vertical split
 "nmap <C-[> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
-
-" disable by default, but allow enabling ruby code folding
-nnoremap <leader>f :let ruby_fold!<cr>
-let ruby_fold = 0
-
-" don't auto fold everything when opening a new file
-set foldlevelstart=99
 
 " navigate between windows more cleanly
 nnoremap <C-h> <C-w>h
