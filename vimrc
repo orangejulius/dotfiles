@@ -33,6 +33,8 @@ Bundle 'matchit.zip'
 Bundle 'mattn/gist-vim'
 " requirement of gist-vim
 Bundle 'mattn/webapi-vim'
+" Ack plugin
+Bundle 'mileszs/ack.vim'
 " javascript syntax highlighting
 Bundle 'pangloss/vim-javascript'
 " ruby syntax highlighting
@@ -117,6 +119,11 @@ let g:ctrlp_max_height = 30
 
 " use silver searcher for ctrlp
 let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+
+" use silver searcher for ack
+let g:ackprg = 'ag --nogroup --nocolor --column'
+
+map <leader>a :Ack!<space>
 
 "theme options
 set background=dark
