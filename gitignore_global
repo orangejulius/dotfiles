@@ -87,7 +87,6 @@ pickle-email-*.html
 .Python
 [Bb]in
 [Ii]nclude
-[Ll]ib
 [Ss]cripts
 venv
 
