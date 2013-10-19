@@ -25,6 +25,8 @@ Bundle 'endwise.vim'
 Bundle 'groenewege/vim-less'
 " run ruby tests with <Leader>t
 Bundle 'janx/vim-rubytest'
+" seoul colors!
+Bundle 'junegunn/seoul256.vim'
 " coffeescript syntax highlighting
 Bundle 'kchmck/vim-coffee-script'
 " text matching (dependency of textobj-rubyblock)
