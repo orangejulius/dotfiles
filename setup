@@ -1,7 +1,7 @@
 #!/bin/bash
 dotfilesDir=`pwd`
 
-notDotfiles="setup README.md init"
+notDotfiles="setup README.md init setup.vim"
 
 #ln command
 ln="ln -nfs"
