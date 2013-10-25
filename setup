@@ -16,8 +16,8 @@ mkdir -p ~/.tmp
 
 #symlink all dotfiles
 for dotfile in ${dotfilesDir}/*; do
-	[[ $notDotfiles =~ $dotfile ]] || continue;
 	dotfileName=$(basename $dotfile)
+	[[ $notDotfiles =~ $dotfileName ]] && continue;
 	$ln "${dotfile}" ~/.${dotfileName}
 done
 
