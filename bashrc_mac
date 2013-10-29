@@ -1,8 +1,4 @@
 #!/bin/bash
-# git autocomplete
-if [ -f `brew --prefix`/etc/bash_completion ]; then
-    . `brew --prefix`/etc/bash_completion
-fi
 
 #gnu coreutils
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
@@ -22,3 +18,8 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 
 #go
 export GOROOT=~/Documents/go/
+
+# git autocomplete
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+    . `brew --prefix`/etc/bash_completion
+fi
