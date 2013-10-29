@@ -129,7 +129,8 @@ map <leader>a :Ack!<space>
 
 "theme options
 set background=dark
-colorscheme Tomorrow-Night-Bright
+let g:seoul256_background = 233
+colorscheme seoul256
 
 " display tab/eol markers
 map <leader>ll :set list!<cr>
