@@ -51,8 +51,6 @@ fi
 
 # my aliases
 alias ssh=mosh
-alias screen=tmux
-alias git='hub'
 
 # pick up local settings
 source ~/.bashrc_local
