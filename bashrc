@@ -11,6 +11,9 @@ export PYTHONDONTWRITEBYTECODE=true
 # keep a super long bash history
 export HISTFILESIZE=250000
 
+# make it easy to have secret commands ;)
+export HISTIGNORE=' *'
+
 # set VI editing mode (amazing!)
 set -o vi
 
