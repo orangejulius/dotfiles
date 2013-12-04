@@ -1,9 +1,5 @@
 #!/bin/bash
 
-#gnu coreutils
-export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
-export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
-
 #homebrew
 export PATH=/usr/local/bin:$PATH
 
@@ -18,6 +14,10 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 
 #go
 export GOROOT=~/Documents/go/
+
+#gnu coreutils
+export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 
 # git autocomplete
 if [ -f `brew --prefix`/etc/bash_completion ]; then
