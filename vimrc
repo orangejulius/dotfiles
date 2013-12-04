@@ -15,6 +15,8 @@ Bundle 'airblade/vim-gitgutter'
 Bundle 'briancollins/vim-jst'
 " use awesome colorscheme
 Bundle 'chriskempson/vim-tomorrow-theme'
+" allow easy navigation between vim/tmux splits
+Bundle 'christoomey/vim-tmux-navigator'
 " awesome searching
 Bundle 'ctrlp.vim'
 " run SQL in vim
