@@ -54,6 +54,8 @@ fi
 
 # my aliases
 alias ssh=mosh
+alias ls="ls --color"
+alias less="less -R"
 
 # pick up local settings
 source ~/.bashrc_local
