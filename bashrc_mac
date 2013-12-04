@@ -1,10 +1,10 @@
 #!/bin/bash
 
-#homebrew
-export PATH=/usr/local/bin:$PATH
-
 #macports
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+
+#homebrew
+export PATH=/usr/local/bin:$PATH
 
 #npm
 export PATH=/usr/local/share/npm/bin:$PATH
