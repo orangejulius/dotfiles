@@ -7,6 +7,8 @@ call vundle#rc()
 " let Vundle manage Vundle
 Bundle 'gmarik/vundle'
 
+"" vim-scripts repos
+
 " easily comment out huge swaths of code
 Bundle 'The-NERD-Commenter'
 " show git line status in the gutter
@@ -47,7 +49,6 @@ Bundle 'ruby.vim'
 Bundle 'textobj-user'
 " easily select ruby blocks
 Bundle 'textobj-rubyblock'
-" vim-scripts repos
 Bundle 'The-NERD-Commenter'
 " Bundler (the rubygem) integration
 Bundle 'tpope/vim-bundler'
