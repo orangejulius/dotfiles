@@ -47,6 +47,8 @@ Bundle 'mileszs/ack.vim'
 Bundle 'pangloss/vim-javascript'
 " ruby syntax highlighting
 Bundle 'ruby.vim'
+" slim syntax highlighting
+Bundle 'slim-template/vim-slim'
 " improve text selection abilities (dependency of textobj-rubyblock)
 Bundle 'textobj-user'
 " easily select ruby blocks
