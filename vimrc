@@ -23,6 +23,8 @@ Bundle 'christoomey/vim-tmux-navigator'
 Bundle 'ctrlp.vim'
 " run SQL in vim
 Bundle 'dbext.vim'
+" scala syntax
+Bundle 'derekwyatt/vim-scala'
 " automatically add ruby end tags
 Bundle 'endwise.vim'
 " less syntax highlighting
