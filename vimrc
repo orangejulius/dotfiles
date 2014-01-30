@@ -49,7 +49,6 @@ Bundle 'ruby.vim'
 Bundle 'textobj-user'
 " easily select ruby blocks
 Bundle 'textobj-rubyblock'
-Bundle 'The-NERD-Commenter'
 " Bundler (the rubygem) integration
 Bundle 'tpope/vim-bundler'
 " great in-vim interface to git (Gblame, etc)
