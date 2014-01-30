@@ -84,6 +84,8 @@ set wildmode=longest,list "use bash-like autocomplete
 
 map <leader><space> :noh<cr> " easily clear highlighting
 
+" new vsplit with <leader>v
+map <leader>v :vsplit<CR>
 " clear whitespace with <leader>W
 map <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 
