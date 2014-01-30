@@ -59,6 +59,8 @@ Bundle 'tpope/vim-bundler'
 Bundle 'tpope/vim-fugitive'
 " rails syntax highlighting
 Bundle 'tpope/vim-rails'
+" allow you to rename the current file with :rename
+Bundle 'vim-scripts/Rename2'
 
 filetype plugin indent on     " required!
 
