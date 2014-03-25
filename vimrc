@@ -164,7 +164,7 @@ autocmd BufWinLeave * call clearmatches()
 " (it conflicts with the above)
 let go_highlight_trailing_whitespace_error = 0
 
-" set up rubtest to use spork for full files
+" set up rubytest to use spork for full files
 " a bug in running single tests prevents changing that for now
 let g:rubytest_cmd_test = "testdrb_or_ruby -Itest %p" " https://gist.github.com/7015069
 
