@@ -177,3 +177,5 @@ au BufNewFile,BufRead *.coffee setf coffee
 au BufNewFile,BufRead *.coffee setl shiftwidth=2 expandtab softtabstop=2
 
 au BufNewFile,BufRead *.rb setl expandtab tabstop=2 softtabstop=2 shiftwidth=2
+
+au BufNewFile,BufRead *.js setl expandtab tabstop=4 softtabstop=4
