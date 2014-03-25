@@ -170,14 +170,10 @@ let g:rubytest_cmd_test = "testdrb_or_ruby -Itest %p" " https://gist.github.com/
 
 """ Settings for various filetypes
 
-au BufRead,BufNewFile Guardfile set filetype=ruby
-autocmd BufNewFile,BufRead *.less setf less
+au BufNewFile,BufRead Guardfile set filetype=ruby
+au BufNewFile,BufRead *.less setf less
 
-au BufNewFile,BufReadPost *.coffee set filetype=coffee
-au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab softtabstop=2
+au BufNewFile,BufRead *.coffee setf coffee
+au BufNewFile,BufRead *.coffee setl shiftwidth=2 expandtab softtabstop=2
 
-au BufNewFile,BufReadPost *.rb set expandtab
-au BufNewFile,BufReadPost *.rb set tabstop=2
-au BufNewFile,BufReadPost *.rb set softtabstop=2
-au BufNewFile,BufReadPost *.rb set shiftwidth=2
-au BufNewFile,BufReadPost *.rb set foldmethod=manual
+au BufNewFile,BufRead *.rb setl expandtab tabstop=2 softtabstop=2 shiftwidth=2
