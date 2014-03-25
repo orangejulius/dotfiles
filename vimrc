@@ -129,6 +129,7 @@ map <C-l> <C-w>l
 " CtrlP options
 let g:ctrlp_max_depth=10
 let g:ctrlp_max_height = 30
+let g:ctrlp_use_caching = 0
 
 " use silver searcher for ctrlp
 let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
