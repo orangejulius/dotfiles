@@ -5,62 +5,62 @@ set runtimepath+=~/.vim/bundle/vundle/ " add vundle to runtimepath
 call vundle#rc()
 
 " let Vundle manage Vundle
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/vundle'
 
 "" vim-scripts repos
 
 " easily comment out huge swaths of code
-Bundle 'The-NERD-Commenter'
+Plugin 'The-NERD-Commenter'
 " show git line status in the gutter
-Bundle 'airblade/vim-gitgutter'
+Plugin 'airblade/vim-gitgutter'
 " javascript template syntax highlighting
-Bundle 'briancollins/vim-jst'
+Plugin 'briancollins/vim-jst'
 " use awesome colorscheme
-Bundle 'chriskempson/vim-tomorrow-theme'
+Plugin 'chriskempson/vim-tomorrow-theme'
 " allow easy navigation between vim/tmux splits
-Bundle 'christoomey/vim-tmux-navigator'
+Plugin 'christoomey/vim-tmux-navigator'
 " awesome searching
-Bundle 'ctrlp.vim'
+Plugin 'ctrlp.vim'
 " run SQL in vim
-Bundle 'dbext.vim'
+Plugin 'dbext.vim'
 " scala syntax
-Bundle 'derekwyatt/vim-scala'
+Plugin 'derekwyatt/vim-scala'
 " automatically add ruby end tags
-Bundle 'endwise.vim'
+Plugin 'endwise.vim'
 " less syntax highlighting
-Bundle 'groenewege/vim-less'
+Plugin 'groenewege/vim-less'
 " run ruby tests with <Leader>t
-Bundle 'janx/vim-rubytest'
+Plugin 'janx/vim-rubytest'
 " seoul colors!
-Bundle 'junegunn/seoul256.vim'
+Plugin 'junegunn/seoul256.vim'
 " coffeescript syntax highlighting
-Bundle 'kchmck/vim-coffee-script'
+Plugin 'kchmck/vim-coffee-script'
 " text matching (dependency of textobj-rubyblock)
-Bundle 'matchit.zip'
+Plugin 'matchit.zip'
 " easily create gists
-Bundle 'mattn/gist-vim'
+Plugin 'mattn/gist-vim'
 " requirement of gist-vim
-Bundle 'mattn/webapi-vim'
+Plugin 'mattn/webapi-vim'
 " Ack plugin
-Bundle 'mileszs/ack.vim'
+Plugin 'mileszs/ack.vim'
 " javascript syntax highlighting
-Bundle 'pangloss/vim-javascript'
+Plugin 'pangloss/vim-javascript'
 " ruby syntax highlighting
-Bundle 'ruby.vim'
+Plugin 'ruby.vim'
 " slim syntax highlighting
-Bundle 'slim-template/vim-slim'
+Plugin 'slim-template/vim-slim'
 " improve text selection abilities (dependency of textobj-rubyblock)
-Bundle 'textobj-user'
+Plugin 'textobj-user'
 " easily select ruby blocks
-Bundle 'textobj-rubyblock'
+Plugin 'textobj-rubyblock'
 " Bundler (the rubygem) integration
-Bundle 'tpope/vim-bundler'
+Plugin 'tpope/vim-bundler'
 " great in-vim interface to git (Gblame, etc)
-Bundle 'tpope/vim-fugitive'
+Plugin 'tpope/vim-fugitive'
 " rails syntax highlighting
-Bundle 'tpope/vim-rails'
+Plugin 'tpope/vim-rails'
 " allow you to rename the current file with :rename
-Bundle 'vim-scripts/Rename2'
+Plugin 'vim-scripts/Rename2'
 
 filetype plugin indent on     " required!
 
