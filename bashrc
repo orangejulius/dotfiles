@@ -56,6 +56,7 @@ fi
 alias ssh=mosh
 alias ls="ls --color"
 alias less="less -R"
+alias tmux="tmux -2"
 
 # pick up local settings
 source ~/.bashrc_local
