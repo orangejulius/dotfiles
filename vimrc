@@ -122,11 +122,8 @@ set undodir=~/.tmp
 " open tag definition in vertical split
 "nmap <C-[> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
 
-" navigate between windows more cleanly
-map <C-h> <C-w>h
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-l> <C-w>l
+" allow mapping <C-j> to things, instead of generating a linefeed
+let g:C_Ctrl_j = 'off'
 
 " CtrlP options
 let g:ctrlp_max_depth=10
