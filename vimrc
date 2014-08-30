@@ -47,6 +47,8 @@ Plugin 'mileszs/ack.vim'
 Plugin 'pangloss/vim-javascript'
 " ruby syntax highlighting
 Plugin 'ruby.vim'
+" undo tree!
+Plugin 'sjl/gundo.vim'
 " slim syntax highlighting
 Plugin 'slim-template/vim-slim'
 " improve text selection abilities (dependency of textobj-rubyblock)
