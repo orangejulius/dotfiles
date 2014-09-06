@@ -79,6 +79,7 @@ set pastetoggle=<F10> " use f10 to toggle paste mode
 set scrolloff=3
 set showmatch
 set smartcase
+set tabstop=4
 set softtabstop=4
 set undofile " use persistent undo in a file
 set visualbell " enable visual bell (disable audio bell)
