@@ -55,9 +55,6 @@ set reply_regexp = "^(([Rr][Ee]?(\[[0-9]+\])?: *)?(\[[^]]+\] *)?)*"
 # Super Sekret config
 source ~/.mutt/imap.muttrc
 
-# Default inbox
-#set spoolfile="="
-
 set record="=Sent Items"
 set postponed="=Drafts"
 
