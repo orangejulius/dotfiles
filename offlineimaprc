@@ -1,0 +1,29 @@
+# Sample minimal config file.  Copy this to ~/.offlineimaprc and edit to
+# get started fast.
+
+[general]
+accounts = Fastmail
+fsync = False
+pythonfile = ~/.offlineimap.py
+
+[Account Fastmail]
+localrepository = FastmailLocal
+remoterepository = FastmailRemote
+status_backend = sqlite
+
+[Repository FastmailLocal]
+type = Maildir
+localfolders = ~/.mail/fastmail
+nametrans = lambda folder: 'INBOX.' + folder
+
+[Repository FastmailRemote]
+nametrans = lambda folder: re.sub('^INBOX\.', '', folder)
+folderfilter = lambda folder: not re.search('(^RESTORED)', folder)
+maxconnections = 3
+#realdelete = no
+type = IMAP
+remotehost = mail.messagingengine.com
+ssl = yes
+cert_fingerprint = 54137524fe721f0cbb8a6a0e1e280ade50482e29
+remoteuser = juliansimioni@fastmail.fm
+remotepasseval = get_fastmail_password()
