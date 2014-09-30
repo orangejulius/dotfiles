@@ -29,6 +29,8 @@ Plugin 'derekwyatt/vim-scala'
 Plugin 'endwise.vim'
 " less syntax highlighting
 Plugin 'groenewege/vim-less'
+" transparently handle GPG encrypted files
+Plugin 'jamessan/vim-gnupg'
 " run ruby tests with <Leader>t
 Plugin 'janx/vim-rubytest'
 " seoul colors!
