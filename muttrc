@@ -52,7 +52,6 @@ set reply_regexp = "^(([Rr][Ee]?(\[[0-9]+\])?: *)?(\[[^]]+\] *)?)*"
 # Super Sekret config
 source ~/.mutt/imap.muttrc
 
-set record="=Sent Items"
 set postponed="=Drafts"
 
 source ~/.mutt/mutt-colors-solarized-dark-256.muttrc
