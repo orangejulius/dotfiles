@@ -14,7 +14,7 @@ status_backend = sqlite
 [Repository FastmailLocal]
 type = Maildir
 localfolders = ~/.mail/fastmail
-nametrans = lambda folder: 'INBOX.' + folder
+nametrans = lambda folder: folder if folder == 'INBOX' else 'INBOX.' + folder
 
 [Repository FastmailRemote]
 nametrans = lambda folder: re.sub('^INBOX\.', '', folder)
