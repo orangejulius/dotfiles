@@ -20,7 +20,7 @@ nametrans = lambda folder: folder if folder == 'INBOX' else 'INBOX.' + folder
 nametrans = lambda folder: re.sub('^INBOX\.', '', folder)
 folderfilter = lambda folder: not re.search('(^RESTORED)', folder)
 maxconnections = 3
-#realdelete = no
+realdelete = no
 type = IMAP
 remotehost = mail.messagingengine.com
 ssl = yes
