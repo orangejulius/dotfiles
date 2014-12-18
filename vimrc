@@ -85,6 +85,7 @@ set showmatch
 set smartcase
 set tabstop=4
 set softtabstop=4
+set shiftwidth=4
 set undofile " use persistent undo in a file
 set visualbell " enable visual bell (disable audio bell)
 set wildmode=longest,list "use bash-like autocomplete
