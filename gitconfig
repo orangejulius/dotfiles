@@ -15,7 +15,7 @@
 [url "git@git.kde.org:"]
 	pushInsteadOf = kde:
 [credential]
-	helper = store
+	helper = cache
 [push]
 	default = current
 [branch]
