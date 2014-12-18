@@ -181,4 +181,6 @@ au BufNewFile,BufRead *.rb setl expandtab tabstop=2 softtabstop=2 shiftwidth=2
 
 au BufNewFile,BufRead *.js setl expandtab tabstop=4 softtabstop=4
 
+au BufNewFile,BufRead *.scala setf scala
+
 au BufRead /tmp/mutt-* set tw=72
