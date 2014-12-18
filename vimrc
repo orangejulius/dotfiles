@@ -13,6 +13,8 @@ Plugin 'gmarik/vundle'
 Plugin 'The-NERD-Commenter'
 " show git line status in the gutter
 Plugin 'airblade/vim-gitgutter'
+" syntax for IO language
+Plugin 'andreimaxim/vim-io'
 " javascript template syntax highlighting
 Plugin 'briancollins/vim-jst'
 " use awesome colorscheme
