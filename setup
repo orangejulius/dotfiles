@@ -1,5 +1,5 @@
 #!/bin/bash
-dotfilesDir=`pwd`
+dotfilesDir=$(pwd)
 
 notDotfiles="setup README.md init setup.vim"
 
@@ -16,9 +16,9 @@ mkdir -p ~/.tmp
 
 #symlink all dotfiles
 for dotfile in ${dotfilesDir}/*; do
-	dotfileName=$(basename $dotfile)
+	dotfileName=$(basename "$dotfile")
 	[[ $notDotfiles =~ $dotfileName ]] && continue;
-	$ln "${dotfile}" ~/.${dotfileName}
+	$ln "${dotfile}" ~/."${dotfileName}"
 done
 
 touch ~/.bashrc_local
