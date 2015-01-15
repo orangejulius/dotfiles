@@ -55,6 +55,13 @@ if [[ -s "$HOME/.rvm/scripts/rvm" ]]; then
 	export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 fi
 
+# Set up GPG Agent using instance launched by X
+if [[ -f "${HOME}/.cache/gpg-agent-info" ]]; then
+	. "${HOME}/.cache/gpg-agent-info"
+	export GPG_AGENT_INFO
+	export SSH_AUTH_SOCK
+fi
+
 # my aliases
 alias ssh=mosh
 alias ls="ls --color"
@@ -63,10 +70,3 @@ alias tmux="tmux -2"
 
 # pick up local settings
 source ~/.bashrc_local
-
-# Set up GPG Agent using instance launched by X
-if [[ -f "${HOME}/.cache/gpg-agent-info" ]]; then
-	. "${HOME}/.cache/gpg-agent-info"
-	export GPG_AGENT_INFO
-	export SSH_AUTH_SOCK
-fi
