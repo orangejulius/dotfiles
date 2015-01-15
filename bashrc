@@ -21,7 +21,6 @@ set -o vi
 shopt -s histappend
 PROMPT_COMMAND="history -a;$PROMPT_COMMAND"
 
-export MOZCONFIG=~/repos/home/dotfiles/mozconfig
 if [ -d ~/.kdedevrc ]; then
 	source ~/.kdedevrc
 fi
