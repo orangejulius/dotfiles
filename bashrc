@@ -64,11 +64,9 @@ alias tmux="tmux -2"
 # pick up local settings
 source ~/.bashrc_local
 
-if [ ! -f "${HOME}/.gpg-agent-info" ]; then
-	gpg-agent --daemon --enable-ssh-support \
-		--write-env-file "${HOME}/.gpg-agent-info" > /dev/null
+# Set up GPG Agent using instance launched by X
+if [[ -f "${HOME}/.cache/gpg-agent-info" ]]; then
+	. "${HOME}/.cache/gpg-agent-info"
+	export GPG_AGENT_INFO
+	export SSH_AUTH_SOCK
 fi
-
-. "${HOME}/.gpg-agent-info"
-export GPG_AGENT_INFO
-export SSH_AUTH_SOCK
