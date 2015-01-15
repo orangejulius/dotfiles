@@ -183,4 +183,7 @@ au BufNewFile,BufRead *.js setl expandtab tabstop=4 softtabstop=4
 
 au BufNewFile,BufRead *.scala setf scala
 
+au BufNewFile,BufRead *.md setf markdown " override the default of Modula2
+" which is probably not what we want
+
 au BufRead /tmp/mutt-* set tw=72
