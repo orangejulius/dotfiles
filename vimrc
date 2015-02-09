@@ -148,6 +148,9 @@ let g:ackprg = 'ag --nogroup --nocolor --column'
 
 map <leader>a :Ack!<space>
 
+" gist-vim
+let g:gist_post_private = 1
+
 "theme options
 set background=dark
 let g:seoul256_background = 233
