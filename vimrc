@@ -1,8 +1,9 @@
 set nocompatible               " be iMproved
+filetype off
 
 "" Vundle
-set runtimepath+=~/.vim/bundle/vundle/ " add vundle to runtimepath
-call vundle#rc()
+set runtimepath+=~/.vim/bundle/vundle " add vundle to runtimepath
+call vundle#begin()
 
 " let Vundle manage Vundle
 Plugin 'gmarik/vundle'
@@ -68,6 +69,7 @@ Plugin 'tpope/vim-rails'
 " allow you to rename the current file with :rename
 Plugin 'vim-scripts/Rename2'
 
+call vundle#end()
 filetype plugin indent on     " required!
 
 syntax on " show syntax highlighting
