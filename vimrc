@@ -62,6 +62,8 @@ Plugin 'textobj-user'
 Plugin 'textobj-rubyblock'
 " Bundler (the rubygem) integration
 Plugin 'tpope/vim-bundler'
+" Elixir lang syntax highlighting
+Plugin 'elixir-lang/vim-elixir'
 " great in-vim interface to git (Gblame, etc)
 Plugin 'tpope/vim-fugitive'
 " rails syntax highlighting
