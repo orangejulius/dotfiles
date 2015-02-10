@@ -1,2 +1,2 @@
-:BundleInstall
+:PluginInstall
 :qall
