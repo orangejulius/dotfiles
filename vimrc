@@ -179,16 +179,12 @@ let go_highlight_trailing_whitespace_error = 0
 """ Settings for various filetypes
 
 au BufNewFile,BufRead Guardfile set filetype=ruby
-au BufNewFile,BufRead *.less setf less
 
-au BufNewFile,BufRead *.coffee setf coffee
 au BufNewFile,BufRead *.coffee setl shiftwidth=2 expandtab softtabstop=2
 
 au BufNewFile,BufRead *.rb setl expandtab tabstop=2 softtabstop=2 shiftwidth=2
 
 au BufNewFile,BufRead *.js setl expandtab tabstop=4 softtabstop=4
-
-au BufNewFile,BufRead *.scala setf scala
 
 au BufNewFile,BufRead *.md setf markdown " override the default of Modula2
 " which is probably not what we want
