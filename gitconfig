@@ -2,7 +2,7 @@
 	ui = auto
 [user]
 	name = Julian Simioni
-	email = julian.simioni@gmail.com
+	email = julian@simioni.org
 [alias]
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset' --abbrev-commit
 	st = status -sb
