@@ -46,7 +46,7 @@ fi
 export PATH=~/.cabal/bin:$PATH
 
 #user scripts
-export PATH=~/code/bin:$PATH
+export PATH=~/bin:$PATH
 
 #rvm
 if [[ -s "$HOME/.rvm/scripts/rvm" ]]; then
