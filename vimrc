@@ -184,7 +184,7 @@ au BufNewFile,BufRead *.coffee setl shiftwidth=2 expandtab softtabstop=2
 
 au BufNewFile,BufRead *.rb setl expandtab tabstop=2 softtabstop=2 shiftwidth=2
 
-au BufNewFile,BufRead *.js setl expandtab tabstop=4 softtabstop=4
+au BufNewFile,BufRead *.js setl expandtab tabstop=2 softtabstop=2 sw=2
 
 au BufNewFile,BufRead *.md setf markdown " override the default of Modula2
 " which is probably not what we want
