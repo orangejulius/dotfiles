@@ -48,6 +48,8 @@ set sort_aux = reverse-last-date-received  # like gmail
 set uncollapse_jump                        # don't collapse on an unread message
 set sort_re                                # thread based on regex
 set reply_regexp = "^(([Rr][Ee]?(\[[0-9]+\])?: *)?(\[[^]]+\] *)?)*"
+macro index s "<save-message>=fastmail/"
+macro index A "sArchive<return>"
 
 # Super Sekret config
 source ~/.mutt/imap.muttrc
