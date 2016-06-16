@@ -62,7 +62,6 @@ if [[ -f "${HOME}/.cache/gpg-agent-info" ]]; then
 fi
 
 # my aliases
-alias ssh=mosh
 alias ls="ls --color"
 alias less="less -R"
 alias tmux="tmux -2"
