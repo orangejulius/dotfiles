@@ -14,22 +14,10 @@ Plugin 'gmarik/vundle'
 Plugin 'The-NERD-Commenter'
 " show git line status in the gutter
 Plugin 'airblade/vim-gitgutter'
-" syntax for IO language
-Plugin 'andreimaxim/vim-io'
-" javascript template syntax highlighting
-Plugin 'briancollins/vim-jst'
-" use awesome colorscheme
-Plugin 'chriskempson/vim-tomorrow-theme'
 " allow easy navigation between vim/tmux splits
 Plugin 'christoomey/vim-tmux-navigator'
 " awesome searching
 Plugin 'ctrlp.vim'
-" run SQL in vim
-Plugin 'dbext.vim'
-" scala syntax
-Plugin 'derekwyatt/vim-scala'
-" automatically add ruby end tags
-Plugin 'endwise.vim'
 " less syntax highlighting
 Plugin 'groenewege/vim-less'
 " transparently handle GPG encrypted files
@@ -60,8 +48,6 @@ Plugin 'slim-template/vim-slim'
 Plugin 'textobj-user'
 " easily select ruby blocks
 Plugin 'textobj-rubyblock'
-" Bundler (the rubygem) integration
-Plugin 'tpope/vim-bundler'
 " Elixir lang syntax highlighting
 Plugin 'elixir-lang/vim-elixir'
 " great in-vim interface to git (Gblame, etc)
