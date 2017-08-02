@@ -29,3 +29,7 @@ fi
 
 # run vim setup
 vim -s 'setup.vim'
+
+# console sometimes gets messed up duing this process
+# so make it reset itself
+reset
