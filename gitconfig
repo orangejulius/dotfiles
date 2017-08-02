@@ -9,6 +9,7 @@
 	ci = commit
 	co = checkout
 	br = branch
+	pf = push --force-with-lease
 
 [url "git://anongit.kde.org/"]
 	insteadOf = kde:
