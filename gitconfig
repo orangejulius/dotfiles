@@ -10,11 +10,6 @@
 	co = checkout
 	br = branch
 	pf = push --force-with-lease
-
-[url "git://anongit.kde.org/"]
-	insteadOf = kde:
-[url "git@git.kde.org:"]
-	pushInsteadOf = kde:
 [credential]
 	helper = cache
 [push]
