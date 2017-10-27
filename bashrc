@@ -65,6 +65,8 @@ fi
 alias ls="ls --color"
 alias less="less -R"
 alias tmux="tmux -2"
+alias nip="npm i; npm prune"
+alias ts="tmuxinator start"
 
 # pick up local settings
 source ~/.bashrc_local
