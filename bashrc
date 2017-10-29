@@ -67,6 +67,9 @@ alias less="less -R"
 alias tmux="tmux -2"
 alias nip="npm i; npm prune"
 alias ts="tmuxinator start"
+alias euall="sudo layman -S && sudo eix-sync && sudo emerge -uavDN world"
+alias myemerge="sudo emerge -uavDN world"
+alias vss="vim -S Session.vim"
 
 # pick up local settings
 source ~/.bashrc_local
