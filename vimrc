@@ -20,6 +20,8 @@ Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'ctrlp.vim'
 " less syntax highlighting
 Plugin 'groenewege/vim-less'
+" terraform syntax highlighting
+Plugin 'hashivim/vim-terraform'
 " transparently handle GPG encrypted files
 Plugin 'jamessan/vim-gnupg'
 " run ruby tests with <Leader>t
