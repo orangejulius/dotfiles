@@ -171,6 +171,7 @@ au BufNewFile,BufRead Guardfile set filetype=ruby
 au BufNewFile,BufRead *.coffee setl shiftwidth=2 expandtab softtabstop=2
 
 au BufNewFile,BufRead *.rb setl expandtab tabstop=2 softtabstop=2 shiftwidth=2
+au BufNewFile,BufRead *.erb setl expandtab tabstop=2 softtabstop=2 shiftwidth=2
 
 au BufNewFile,BufRead *.js setl expandtab tabstop=2 softtabstop=2 sw=2
 au BufNewFile,BufRead *.json setl expandtab tabstop=2 softtabstop=2 shiftwidth=2
