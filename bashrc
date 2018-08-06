@@ -70,6 +70,8 @@ alias ts="tmuxinator start"
 alias euall="sudo layman -S && sudo eix-sync && sudo emerge -uavDN world"
 alias myemerge="sudo emerge -uavDN world"
 alias vss="vim -S Session.vim"
+alias be="bundle exec"
+alias dc="docker-compose"
 
 # pick up local settings
 source ~/.bashrc_local
