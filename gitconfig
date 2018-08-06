@@ -10,6 +10,7 @@
 	co = checkout
 	br = branch
 	pf = push --force-with-lease
+	cleanup = "!git branch --merged | grep  -v '\\*\\|master\\|develop' | xargs -n 1 git branch -d"
 [credential]
 	helper = cache
 [push]
