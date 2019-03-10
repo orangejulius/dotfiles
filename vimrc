@@ -175,6 +175,7 @@ au BufNewFile,BufRead *.erb setl expandtab tabstop=2 softtabstop=2 shiftwidth=2
 
 au BufNewFile,BufRead *.js setl expandtab tabstop=2 softtabstop=2 sw=2
 au BufNewFile,BufRead *.json setl expandtab tabstop=2 softtabstop=2 shiftwidth=2
+au BufNewFile,BufRead *.tf setl expandtab tabstop=2 softtabstop=2 shiftwidth=2
 
 au BufRead,BufNewFile *.pde set filetype=arduino
 au BufRead,BufNewFile *.ino set filetype=arduino
