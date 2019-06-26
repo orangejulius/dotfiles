@@ -50,8 +50,6 @@ Plugin 'slim-template/vim-slim'
 Plugin 'textobj-user'
 " easily select ruby blocks
 Plugin 'textobj-rubyblock'
-" Elixir lang syntax highlighting
-Plugin 'elixir-lang/vim-elixir'
 " great in-vim interface to git (Gblame, etc)
 Plugin 'tpope/vim-fugitive'
 " rails syntax highlighting
