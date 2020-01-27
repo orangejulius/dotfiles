@@ -25,3 +25,5 @@
 	gpgsign = true
 [github]
 	user = orangejulius
+[fetch]
+	prune = true
