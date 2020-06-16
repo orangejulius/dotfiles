@@ -164,16 +164,8 @@ let go_highlight_trailing_whitespace_error = 0
 
 """ Settings for various filetypes
 
-au BufNewFile,BufRead Guardfile set filetype=ruby
-
-au BufNewFile,BufRead *.coffee setl shiftwidth=2 expandtab softtabstop=2
-
-au BufNewFile,BufRead *.rb setl expandtab tabstop=2 softtabstop=2 shiftwidth=2
-au BufNewFile,BufRead *.erb setl expandtab tabstop=2 softtabstop=2 shiftwidth=2
-
-au BufNewFile,BufRead *.js setl expandtab tabstop=2 softtabstop=2 sw=2
-au BufNewFile,BufRead *.json setl expandtab tabstop=2 softtabstop=2 shiftwidth=2
-au BufNewFile,BufRead *.tf setl expandtab tabstop=2 softtabstop=2 shiftwidth=2
+" use spaces not tabs for most files :(
+au BufNewFile,BufRead *.{rb,erb,js,json,tf,coffee,scss} setl expandtab tabstop=2 softtabstop=2 shiftwidth=2
 
 au BufRead,BufNewFile *.pde set filetype=arduino
 au BufRead,BufNewFile *.ino set filetype=arduino
