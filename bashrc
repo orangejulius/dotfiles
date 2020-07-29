@@ -72,6 +72,7 @@ alias myemerge="sudo emerge -uavDN world"
 alias vss="vim -S Session.vim"
 alias be="bundle exec"
 alias dc="docker-compose"
+alias dsp="docker system prune"
 
 # pick up local settings
 source ~/.bashrc_local
