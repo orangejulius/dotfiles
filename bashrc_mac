@@ -4,7 +4,11 @@
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 
 #homebrew
-export PATH=/usr/local/bin:$PATH
+export PATH=/opt/homebrew/bin:$PATH
+
+# use homebrew installed ruby
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+export PATH="/opt/homebrew/opt/ruby@2.7/bin:$PATH"
 
 #npm
 export PATH=/usr/local/share/npm/bin:$PATH
@@ -16,10 +20,11 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 export GOROOT=~/Documents/go/
 
 #gnu coreutils
-export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
-export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
+export PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"
+export MANPATH="/opt/homebrew/opt/coreutils/libexec/gnuman:$MANPATH"
 
 # git autocomplete, requires git and bash-completion installed with homebrew
-if [ -f `brew --prefix`/etc/bash_completion ]; then
-    . `brew --prefix`/etc/bash_completion
-fi
+[[ -r "/opt/homebrew/etc/profile.d/bash_completion.sh" ]] && . "/opt/homebrew/etc/profile.d/bash_completion.sh"
+
+# https://apple.stackexchange.com/questions/371997/suppressing-the-default-interactive-shell-is-now-zsh-message-in-macos-catalina
+export BASH_SILENCE_DEPRECATION_WARNING=1
