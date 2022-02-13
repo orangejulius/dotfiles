@@ -169,7 +169,7 @@ au BufNewFile,BufRead *.{rb,erb,js,json,tf,coffee,scss} setl expandtab tabstop=2
 
 au BufRead,BufNewFile *.pde set filetype=arduino
 au BufRead,BufNewFile *.ino set filetype=arduino
-
+au BufNewFile,BufRead Guardfile set filetype=ruby
 au BufNewFile,BufRead *.md setf markdown " override the default of Modula2
 " which is probably not what we want
 
