@@ -143,6 +143,10 @@ map <leader>a :Ack!<space>
 " gist-vim
 let g:gist_post_private = 1
 
+" rubytest
+let g:rubytest_cmd_spec = "bundle exec rspec %p"
+let g:rubytest_cmd_example = "bundle exec rspec %p:%c"
+
 "theme options
 set background=dark
 let g:seoul256_background = 233
