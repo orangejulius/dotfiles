@@ -91,3 +91,6 @@ venv
 
 # C
 *.o
+
+#AI
+.claude
