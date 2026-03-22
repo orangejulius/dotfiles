@@ -184,3 +184,8 @@ au BufNewFile,BufRead *.md setf markdown " override the default of Modula2
 " which is probably not what we want
 
 au BufRead /tmp/mutt-* set tw=72
+
+set clipboard=exclude:.*
+
+set modelines=0
+set nomodeline
