@@ -91,6 +91,12 @@ map <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 " easily open vimrc
 map <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr>
 
+" allow refreshing all files easily
+map <leader>c :checktime<cr>
+
+" allow toggling paste mode by leader key (F10 not always available)
+map <leader>p :set invpaste<cr>
+
 " auto insert \v before search strings
 map / /\v
 
