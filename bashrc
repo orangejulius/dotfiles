@@ -61,6 +61,16 @@ if [[ -f "${HOME}/.cache/gpg-agent-info" ]]; then
 	export SSH_AUTH_SOCK
 fi
 
+# put the AWS_PROFILE in PS1
+_prompt_command() {
+	local aws_segment=""
+	if [[ -n "$AWS_PROFILE" ]]; then
+		aws_segment="\[\033[01;33m\](aws:$AWS_PROFILE)\[\033[00m\] "
+	fi
+	PS1="\[\033[01;32m\]\u@\h\[\033[01;34m\] \w \$\[\033[00m\] ${aws_segment}"
+}
+PROMPT_COMMAND="_prompt_command;$PROMPT_COMMAND"
+
 # my aliases
 alias ls="ls --color"
 alias less="less -R"
